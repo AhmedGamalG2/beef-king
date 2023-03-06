@@ -1,0 +1,194 @@
+.container {
+  box-sizing: border-box;
+  background-color: #332c39;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+.catContain {
+  width: auto;
+  position: relative;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin-top: 75px;
+  column-gap: 50px;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  row-gap: 10px;
+}
+
+.cat {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #171717;
+  color: #cae9f8;
+  cursor: pointer;
+}
+.cat:hover {
+  background-color: #ffba00;
+  color: #171717;
+}
+.currentCatStyle {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffba00;
+  color: #171717;
+  cursor: pointer;
+}
+.prodContainer {
+  display: grid;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: 430px;
+  justify-items: center;
+  gap: 20px;
+}
+.prod {
+  width: 280px;
+  height: auto;
+  color: #cae9f8;
+}
+.pagnationNums {
+  font-size: 40px;
+  width: 50px;
+  border: 1px solid gray;
+  color: white;
+  text-align: center;
+  background-color: #171717;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.pagnationNums:hover {
+  background-color: #ffba00;
+  color: #171717;
+}
+.currentPageNumStyle {
+  font-size: 40px;
+  width: 50px;
+  border: 1px solid gray;
+  color: #171717;
+  text-align: center;
+  background-color: #ffba00;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sortContainer {
+  height: auto;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sortItem {
+  height: 40px;
+  color: #cae9f8;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.sortItem:hover {
+  color: #171717;
+  background-color: #ffba00;
+}
+.sortSelected {
+  height: 40px;
+  color: #171717;
+  background-color: #ffba00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .catContain {
+    width: calc(100%-30px);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    margin: 0 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  .cat {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    background-color: #171717;
+    color: #cae9f8;
+    cursor: pointer;
+  }
+  .currentCatStyle {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    background-color: #ffba00;
+    color: #171717;
+    cursor: pointer;
+  }
+  .sortContainer {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .sortItem {
+    height: 40px;
+    width: 100px;
+    color: #cae9f8;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  .sortSelected {
+    height: 40px;
+    width: 100px;
+    color: #171717;
+    background-color: #ffba00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+}

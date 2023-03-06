@@ -1,0 +1,83 @@
+.container {
+  box-sizing: border-box;
+  background-color: #292d33;
+  min-height: 100vh;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgb(190 188 202);
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+.name {
+  font-size: 80px;
+  text-align: center;
+  color: rgb(211, 72, 70);
+  margin: 10px 0px;
+  animation: try 1s linear, scale 1s linear;
+}
+.para {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0px;
+  color: rgb(190 188 202);
+  animation: name 1.5s linear, scale 1.5s linear;
+  min-width: 300px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(180deg) scale(0%);
+  }
+  to {
+    transform: rotate(360deg) scale(100%);
+  }
+}
+@keyframes name {
+  from {
+    translate: 0px 300px;
+  }
+  to {
+    translate: 0px 0px;
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(0%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+@keyframes try {
+  0% {
+    translate: -200px;
+  }
+  70% {
+    translate: 200px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
+@media (max-width: 757px) {
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .para {
+    font-size: 20px;
+  }
+}

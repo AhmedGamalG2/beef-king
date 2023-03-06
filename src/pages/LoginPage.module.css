@@ -1,0 +1,48 @@
+.element {
+  color: #609ea2;
+  padding: 0 5px;
+  height: 20px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #609ea2;
+}
+.element:focus {
+  outline: none;
+}
+.btn {
+  height: 35px;
+  width: 100px;
+  align-self: center;
+  background-color: #171717;
+  color: #cae9f8;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  background-color: #332c39;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.subCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  border-radius: 43px 0px;
+  width: 30%;
+  min-width: 300px;
+  height: 400px;
+  padding: 50px;
+  box-shadow: rgb(158 158 158 / 43%) -6px 5px 0px 20px;
+}
+@media (max-width: 1000px) {
+  .subCont {
+    box-shadow: none;
+    width: 80%;
+  }
+}

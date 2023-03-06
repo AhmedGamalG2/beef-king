@@ -1,0 +1,178 @@
+.headerStyle {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 5em;
+  position: fixed;
+  width: 98%;
+  background-color: #609ea2;
+  margin: 0;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0px 0.5px 20px 0px #000000a3;
+}
+.logo {
+  width: 180px;
+  color: #cae9f8;
+  font-size: 30px;
+  text-decoration: none;
+}
+.logo:hover {
+  color: #332c39;
+}
+.logoSelected {
+  width: 180px;
+  color: #332c39;
+  font-size: 30px;
+  text-decoration-line: none;
+}
+.item {
+  color: #cae9f8;
+  font-size: 25px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+.item:hover {
+  color: #332c39;
+}
+.itemSelected {
+  color: #332c39;
+  font-size: 25px;
+  text-decoration-line: none;
+  margin-right: 25px;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+.bMenu {
+  display: none;
+  color: #332c39;
+  transform: scale(1.7) translateX(-20px);
+  cursor: pointer;
+}
+.ulInBMenu {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 20px;
+  background-color: #609ea2;
+  padding: 0;
+  list-style: none;
+}
+.BK {
+  color: #332c39;
+  list-style: none;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.BK::first-letter {
+  color: #cae9f8;
+}
+.BK::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  right: 0px;
+  top: 95px;
+  background-image: linear-gradient(to right, #332c39 50%, aliceblue 50%);
+}
+.BK::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 85px;
+  right: 45%;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, aliceblue 50%, #332c39 50%);
+}
+.searchBar {
+  color: #171717;
+  width: 100%;
+  height: 25px;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.searchComp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logoAndSearch {
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .ul {
+    display: none;
+  }
+  .bMenu {
+    display: block;
+  }
+  .logoAndSearch {
+    width: 80%;
+  }
+}
+.active {
+  transform: rotateY(0deg);
+  transform-origin: left;
+}
+
+.notActive {
+  transform: rotateY(180deg);
+  transform-origin: right;
+}
+
+@media (min-width: 767px) {
+  .active {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .item {
+    margin-left: 10px;
+    padding-left: 10%;
+  }
+
+  .itemSelected {
+    margin-left: 10px;
+    padding-left: 10%;
+  }
+  .item::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    top: 20px;
+    background-image: linear-gradient(to right, #332c39 50%, aliceblue 50%);
+  }
+  .itemSelected::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    top: 20px;
+    background-image: linear-gradient(to right, #332c39 50%, aliceblue 50%);
+  }
+}

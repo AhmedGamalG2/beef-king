@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "REGULAR BEEF BURGER",
+      "price": 42,
+      "source": "https://i.ibb.co/TqtGzvv/1.png",
+      "source2": "https://i.ibb.co/87rBnpF/1-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 1
+    },
+    {
+      "id": 2,
+      "name": "BLACK BEEF BURGER",
+      "price": 45,
+      "source": "https://i.ibb.co/YcnDmnD/2.png",
+      "source2": "https://i.ibb.co/HnCxQTL/2-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 1
+    },
+    {
+      "id": 3,
+      "name": "BIG MEETY",
+      "price": 15,
+      "source": "https://i.ibb.co/TcFfDJg/3.png",
+      "source2": "https://i.postimg.cc/SQZBKzpM/3-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 1
+    },
+    {
+      "id": 4,
+      "name": "CHICKEN BURGER",
+      "price": 20,
+      "source": "https://i.postimg.cc/Yq5y46Dh/4.png",
+      "source2": "https://i.postimg.cc/SsHtWcQT/4-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 1
+    },
+    {
+      "id": 5,
+      "name": "DOUBLE MAC BURGER",
+      "price": 45,
+      "source": "https://i.postimg.cc/RVHgz3C9/5.png",
+      "source2": "https://i.postimg.cc/qv2D2NWQ/5-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 1
+    },
+    {
+      "id": 6,
+      "name": "FRENCH FRIES",
+      "price": 45,
+      "source": "https://i.postimg.cc/wxSSJY7q/s1.png",
+      "source2": "https://i.postimg.cc/NMCdQmrG/6-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 2
+    },
+    {
+      "id": 7,
+      "name": "FRENCH FRIES",
+      "price": 45,
+      "source": "https://i.postimg.cc/s2D8yV0c/s2.png",
+      "source2": "https://i.postimg.cc/GtZzyRQZ/7-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 2
+    },
+    {
+      "id": 8,
+      "name": "COLA",
+      "price": 15,
+      "source": "https://i.postimg.cc/h4w2w8Bp/b1.png",
+      "source2": "https://i.postimg.cc/fbKHg6z9/8-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 3
+    },
+    {
+      "id": 9,
+      "name": "SWEET DOUGHNUT",
+      "price": 20,
+      "source": "https://i.postimg.cc/VkPDsY5t/b2.png",
+      "source2": "https://i.postimg.cc/NMjNhpFP/9-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 3
+    },
+    {
+      "id": 10,
+      "name": "JUICE",
+      "price": 45,
+      "source": "https://i.postimg.cc/hGSsxpLP/b3.png",
+      "source2": "https://i.postimg.cc/brG3rrQx/10-2.jpg",
+      "count": 0,
+      "isInCart": false,
+      "catigory": 3
+    }
+  ],
+  "categories": [
+    {
+      "name": "Food",
+      "id": 1
+    },
+    {
+      "name": "Snack",
+      "id": 2
+    },
+    {
+      "name": "Beverage",
+      "id": 3
+    }
+  ]
+}
