@@ -8,7 +8,7 @@ const Home = ({ categories, products, setCategory }) => {
     const shuffled = [...categories].sort(() => 0.5 - Math.random());
     let shuffledArray = shuffled.slice(0, 5);
     setNewShuffled(shuffledArray);
-  }, []);
+  }, [categories]);
 
   return (
     <div className={HomeStayle.container}>
