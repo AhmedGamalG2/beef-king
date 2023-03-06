@@ -32,6 +32,7 @@ const Home = ({ categories, products, setCategory }) => {
       >
         {newShuffled.map((cat) => (
           <CatInHome
+            key={cat.strCategory}
             categories={cat}
             products={products}
             setCategory={setCategory}
