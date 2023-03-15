@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import HeaderStyle from "./Header.module.css";
-import LoginStyle from "../pages/LoginPage.module.css";
 const Header = ({ active, handelActive, setSearchValue, setCurrentPage }) => {
   let location = useLocation();
   let navigate = useNavigate();

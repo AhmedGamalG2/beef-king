@@ -130,12 +130,9 @@
 }
 @media (max-width: 767px) {
   .catContain {
-    width: calc(100%-30px);
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    margin: 0 10px;
     justify-content: center;
     align-content: center;
   }
