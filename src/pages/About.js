@@ -16,7 +16,7 @@ const About = () => {
           <a href="https://www.linkedin.com/in/ahmed-gamal-a8009b265">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          {/* <a>Portfolio</a> */}
+          <a href="https://ahmedgamal-portfolio.vercel.app/">Portfolio</a>
         </div>
       </p>
     </div>
